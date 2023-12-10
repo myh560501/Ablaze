@@ -53,7 +53,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: /home/runner/work/Ablaze/Ablaze/build/*.jar
+        asset_path: /home/runner/work/Ablaze/Ablaze/build/Ablaze-1.18.jar
         asset_name: BuildedJar.jar
         asset_content_type: application/zip
 
