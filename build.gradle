@@ -174,5 +174,5 @@ publishing {
 }
 
 tasks.withType(Jar) {
-    destinationDir = file("$rootDir")
+    destinationDir = file("/home/runner/work/Ablaze/Ablaze/build")
 }
