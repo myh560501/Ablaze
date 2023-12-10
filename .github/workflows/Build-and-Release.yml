@@ -44,6 +44,9 @@ jobs:
         body: AutoRelease.
         draft: false
         prerelease: false
+
+    - name: Zip the jars
+      run: zip -r /home/runner/Ablaze-1.18.zip /home/runner/work/Ablaze
         
     - name: Upload Release Asset
       uses: actions/upload-release-asset@v1
@@ -51,8 +54,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: /home/runner/work/Ablaze/Ablaze/build/Ablaze-1.18.jar
-        asset_name: Ablaze-1.18.jar
+        asset_path: /home/runner/Ablaze-1.18.zip
+        asset_name: Ablaze-1.18.zip
         asset_content_type: application/zip
 
 
