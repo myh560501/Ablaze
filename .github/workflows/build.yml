@@ -13,11 +13,10 @@ on:
   pull_request:
     branches: [ "1.18/dev" ]
 
-permissions:
-  contents: read|write
-
 jobs:
   build:
+
+    permissions: read-all
 
     runs-on: ubuntu-latest
 
@@ -34,6 +33,14 @@ jobs:
       with:
         arguments: build
 
+  release:
+
+    permissions: write-all
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
