@@ -43,7 +43,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: AutoRelease
+        tag_name: AutoRelease Ablaze
         release_name: Auto Release ${{ github.ref }}
         body_path: /home/runner/work/Ablaze/Ablaze/changelog.txt
         draft: false
