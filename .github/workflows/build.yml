@@ -14,7 +14,7 @@ on:
     branches: [ "1.18/dev" ]
 
 permissions:
-  contents: read & write
+  contents: read|write
 
 jobs:
   build:
