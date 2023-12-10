@@ -1,7 +1,3 @@
-tasks.withType(Jar) {
-    destinationDir = file("$rootDir")      //$rootDir 取项目的顶级目录
-}
-
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
@@ -175,4 +171,8 @@ publishing {
             url "file://${project.projectDir}/mcmodsrepo"
         }
     }
+}
+
+tasks.withType(Jar) {
+    destinationDir = file("$rootDir")
 }
