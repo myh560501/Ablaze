@@ -41,7 +41,7 @@ jobs:
       with:
         tag_name: AutoRelease
         release_name: Release ${{ github.ref }}
-        body: AutoRelease.
+        body_path: /home/runner/work/Ablaze/Ablaze/changelog.txt
         draft: false
         prerelease: false
 
