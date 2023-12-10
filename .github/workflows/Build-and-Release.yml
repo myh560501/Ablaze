@@ -31,7 +31,7 @@ jobs:
         distribution: 'temurin'
     - run: chmod 777 ./gradlew
     - name: Build with Gradle
-      run: ./gradlew --build-file  /home/runner/work/Ablaze/Ablaze/build/Ablaze-1.18.jar build
+      run: ./gradlew build
     
     - name: Create Release
       id: create_release
